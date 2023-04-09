@@ -7,6 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { PublishersComponent } from './publishers/publishers.component';
 import { StudentsComponent } from './students/students.component';
 import { AuthorComponent } from './author/author.component';
+import { AddAdminComponent } from './add-admin/add-admin.component';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { AddAuthorComponent } from './add-author/add-author.component';
+import { AddPublisherComponent } from './add-publisher/add-publisher.component';
 
 const routes: Routes = [
   {
@@ -36,6 +40,22 @@ const routes: Routes = [
   {
     path: 'author',
     component: AuthorComponent,
+  },
+  {
+    path: 'add-admin',
+    component: AddAdminComponent,
+  },
+  {
+    path: 'add-student',
+    component: AddStudentComponent,
+  },
+  {
+    path: 'add-author',
+    component: AddAuthorComponent,
+  },
+  {
+    path: 'add-publisher',
+    component: AddPublisherComponent,
   },
 ];
 

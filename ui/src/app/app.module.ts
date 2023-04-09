@@ -13,7 +13,10 @@ import { HomeComponent } from './home/home.component';
 import { AddAdminComponent } from './add-admin/add-admin.component';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { AddBooksComponent } from './add-books/add-books.component';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { AddAuthorComponent } from './add-author/add-author.component';
+import { AddPublisherComponent } from './add-publisher/add-publisher.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { HttpClientModule} from '@angular/common/http'
     SidenavComponent,
     HomeComponent,
     AddAdminComponent,
-    AddBooksComponent
+    AddBooksComponent,
+    AddStudentComponent,
+    AddAuthorComponent,
+    AddPublisherComponent
   ],
   imports: [
     BrowserModule,
