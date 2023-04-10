@@ -1,1 +1,34 @@
-<p>add-author works!</p>
+<div style="padding-left: 100px;">
+    <h1> Add Authors</h1>
+
+    <form [formGroup]="authorsForm" (ngSubmit)="saveAuthor()" >
+        <!-- <div>
+          <label for="id">ID:</label>
+          <input type="text" id="ID" formControlName="ID" />
+        </div> -->
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" formControlName="name" />
+        </div>
+        <!-- <div>
+          <label for="dept">Dept:</label>
+          <input type="text" id="dept" formControlName="dept" />
+        </div>
+        <div>
+          <label for="rollNumber">Roll Number:</label>
+          <input type="text" id="rollNumber" formControlName="rollNumber" />
+        </div> -->
+        <div>
+          <label for="birthDate">Birth Date:</label>
+          <input type="text" id="birthDate" formControlName="birthDate" />
+        </div>
+        <div>
+          <label for="nationality">Nationality:</label>
+          <input type="text" id="nationality" formControlName="nationality" />
+        </div>  
+        <button type="submit">Save</button>
+      </form>
+</div>
+
+<h3> Form status: {{authorsForm.valid}}</h3>
+<h3> Form json: {{authorsForm.value | json}}</h3>
